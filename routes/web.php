@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-// /{全てのパス}で　app.blade.phpを返す
+// /{全てのパス}で　app.blade.phpを返す　any
 Route::get('/{any}', function () {
     return view('app');
 })->where('any', '.*');
