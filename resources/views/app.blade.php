@@ -10,11 +10,7 @@
 
         <link rel="stylesheet" href="{{ mix('css/app.css') }}"></script>
 
-        <script>
-            window.Laravel = {
-                csrfToken: "{{ csrf_token() }}"
-            };
-        </script>
+         <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
     <body>
         <div id="app">

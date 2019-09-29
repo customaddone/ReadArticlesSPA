@@ -7,6 +7,7 @@
 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -21,7 +22,7 @@ const router = new VueRouter({
     /*
       ここでVue Routerを定義しているので、HTMLに書かれた<router-view></router-view>が
       下記のように変わる
-      
+
       / -> Articles/Index.vue を表示
 　　　 /about -> About.vue を表示
     */
