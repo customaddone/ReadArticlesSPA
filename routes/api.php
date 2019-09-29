@@ -20,6 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['middleware' => 'api'],function () {
     // GET /api/articlesで記事５件をJsonで返す
     // 今回は簡略化のためにControllerは使わない
+    // 慣れたらcontroller使う
     Route::get('articles', function() {
         $articles = Article::all()->take(5);
         return $articles;
