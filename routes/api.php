@@ -25,4 +25,4 @@ Route::group(['middleware' => 'api'],function () {
         $articles = Article::all()->take(5);
         return $articles;
     });
-})
+});
